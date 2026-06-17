@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Библиотека — Каталог книг</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/books.css">
+</head>
+<body>
+  <div class="page-wrapper">
+    <!-- ========== HEADER ========== -->
+    <header class="header">
+      <div class="container">
+        <div class="header-content">
+          <div class="logo">
+            <span class="logo-icon">📚</span>
+            <span>Библиотека</span>
+          </div>
+          <nav class="nav">
+            <a href="index.html" class="active">
+              📖 Книги
+              <span class="nav-badge">10</span>
+            </a>
+            <a href="readers.html">
+              👤 Читатели
+              <span class="nav-badge">5</span>
+            </a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- ========== MAIN ========== -->
+    <main class="main-content">
+      <div class="container">
+        <h1 class="page-title">Каталог книг</h1>
+        <p class="page-subtitle">
+          Всего книг: <strong>10</strong>
+        </p>
+
+        <!-- Toolbar -->
+        <div class="page-toolbar">
+          <div class="book-search">
+            <input 
+              type="text" 
+              class="book-search-input" 
+              placeholder="🔍 Поиск по названию или автору..."
+            >
+            <button class="book-search-clear">✕</button>
+          </div>
+          <span class="search-result-count">Найдено: 10</span>
+        </div>
+
+        <!-- Book Grid -->
+        <div class="card-grid">
+          <!-- Book Card 1 -->
+          <article class="book-card">
+            <div class="book-cover">
+              <div class="book-cover-placeholder">
+                <span class="book-cover-emoji">📖</span>
+              </div>
+              <span class="book-status-badge badge badge-unavailable">Выдана</span>
+            </div>
+            <div class="book-content">
+              <h3 class="book-title">Мастер и Маргарита</h3>
+              <p class="book-author">Михаил Булгаков</p>
+              <div class="book-meta">
+                <span class="book-year">1967</span>
+                <span class="book-genre">Роман</span>
+              </div>
+              <p class="book-description">
+                Мистический роман о дьяволе, посетившем Москву в 1930-х годах.
+              </p>
+              <button class="btn btn-primary btn-block">Подробнее</button>
+            </div>
+          </article>
+
+          <!-- Book Card 2 -->
+          <article class="book-card">
+            <div class="book-cover">
+              <div class="book-cover-placeholder">
+                <span class="book-cover-emoji">📖</span>
+              </div>
+              <span class="book-status-badge badge badge-available">Доступна</span>
+            </div>
+            <div class="book-content">
+              <h3 class="book-title">Война и мир</h3>
+              <p class="book-author">Лев Толстой</p>
+              <div class="book-meta">
+                <span class="book-year">1869</span>
+                <span class="book-genre">Эпопея</span>
+              </div>
+              <p class="book-description">
+                Масштабное произведение о русском обществе в эпоху наполеоновских войн.
+              </p>
+              <button class="btn btn-primary btn-block">Подробнее</button>
+            </div>
+          </article>
+
+          <!-- Book Card 3 -->
+          <article class="book-card">
+            <div class="book-cover">
+              <div class="book-cover-placeholder">
+                <span class="book-cover-emoji">📖</span>
+              </div>
+              <span class="book-status-badge badge badge-available">Доступна</span>
+            </div>
+            <div class="book-content">
+              <h3 class="book-title">Преступление и наказание</h3>
+              <p class="book-author">Фёдор Достоевский</p>
+              <div class="book-meta">
+                <span class="book-year">1866</span>
+                <span class="book-genre">Роман</span>
+              </div>
+              <p class="book-description">
+                Психологический роман о студенте Раскольникове и его теории.
+              </p>
+              <button class="btn btn-primary btn-block">Подробнее</button>
+            </div>
+          </article>
+
+          <!-- Book Card 4 -->
+          <article class="book-card">
+            <div class="book-cover">
+              <div class="book-cover-placeholder">
+                <span class="book-cover-emoji">📖</span>
+              </div>
+              <span class="book-status-badge badge badge-unavailable">Выдана</span>
+            </div>
+            <div class="book-content">
+              <h3 class="book-title">Евгений Онегин</h3>
+              <p class="book-author">Александр Пушкин</p>
+              <div class="book-meta">
+                <span class="book-year">1833</span>
+                <span class="book-genre">Роман в стихах</span>
+              </div>
+              <p class="book-description">
+                История о разочарованном дворянине и трагической любви.
+              </p>
+              <button class="btn btn-primary btn-block">Подробнее</button>
+            </div>
+          </article>
+
+          <!-- Book Card 5 -->
+          <article class="book-card">
+            <div class="book-cover">
+              <div class="book-cover-placeholder">
+                <span class="book-cover-emoji">📖</span>
+              </div>
+              <span class="book-status-badge badge badge-available">Доступна</span>
+            </div>
+            <div class="book-content">
+              <h3 class="book-title">1984</h3>
+              <p class="book-author">Джордж Оруэлл</p>
+              <div class="book-meta">
+                <span class="book-year">1949</span>
+                <span class="book-genre">Антиутопия</span>
+              </div>
+              <p class="book-description">
+                Роман о тоталитарном обществе и Большом Брате.
+              </p>
+              <button class="btn btn-primary btn-block">Подробнее</button>
+            </div>
+          </article>
+
+          <!-- Book Card 6 -->
+          <article class="book-card">
+            <div class="book-cover">
+              <div class="book-cover-placeholder">
+                <span class="book-cover-emoji">📖</span>
+              </div>
+              <span class="book-status-badge badge badge-available">Доступна</span>
+            </div>
+            <div class="book-content">
+              <h3 class="book-title">Маленький принц</h3>
+              <p class="book-author">Антуан де Сент-Экзюпери</p>
+              <div class="book-meta">
+                <span class="book-year">1943</span>
+                <span class="book-genre">Сказка</span>
+              </div>
+              <p class="book-description">
+                Философская сказка о дружбе, любви и ответственности.
+              </p>
+              <button class="btn btn-primary btn-block">Подробнее</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div>© 2026 Библиотека. Все права защищены.</div>
+          <div class="footer-contacts">
+            <span>📞 +7 (999) 123-45-67</span>
+            <span>✉️ library@mail.ru</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
