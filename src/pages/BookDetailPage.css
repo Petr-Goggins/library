@@ -1,0 +1,11 @@
+.book-detail-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.not-found {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 50px 0;
+}
