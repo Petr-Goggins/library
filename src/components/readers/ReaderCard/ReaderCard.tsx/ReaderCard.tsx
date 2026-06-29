@@ -1,18 +1,29 @@
-import type { IReader } from '../../../types/reader.types';
-interface ReaderCardProps { reader: IReader; }
+import { useNavigate } from 'react-router-dom';
+import { IReader } from '../../../types/reader.types';
+
+interface ReaderCardProps {
+  reader: IReader;
+}
+
 const ReaderCard = ({ reader }: ReaderCardProps) => {
-  const { fullName, email, phone, activeBooks, registrationDate } = reader;
+  const navigate = useNavigate();
+
+  const handleProfileClick = () => {
+    navigate(`/reader/${reader.id}`);
+  };
+
   return (
     <div className="reader-card">
       <div className="reader-card__avatar">👤</div>
-      <div className="reader-card__info">
-        <h3 className="reader-card__name">{fullName}</h3>
-        <p className="reader-card__email">{email}</p>
-        <p className="reader-card__phone">{phone}</p>
-        <p className="reader-card__registered">Зарегистрирован: {registrationDate.toLocaleDateString('ru-RU')}</p>
-        <p className="reader-card__books">Книг на руках: <strong>{activeBooks.length}</strong></p>
-      </div>
+      <h3 className="reader-card__name">{reader.fullName}</h3>
+      <p className="reader-card__email">{reader.email}</p>
+      <p className="reader-card__phone">{reader.phone}</p>
+      <p className="reader-card__books">Книг на руках: {reader.activeBooks.length}</p>
+      <button onClick={handleProfileClick} className="btn btn-primary">
+        Профиль
+      </button>
     </div>
   );
 };
+
 export default ReaderCard;
